@@ -1,1 +1,30 @@
-
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>My First Web Page</title> 
+  <style> 
+    body { 
+      background-color: lightblue; 
+      margin-top: 10px; 
+    } 
+    h1 { 
+      color: navy; 
+      text-align: center; 
+      cursor: pointer;
+    } 
+    p { 
+      font-size: 16px; 
+      line-height: 1.5; 
+    } 
+  </style> 
+</head>
+<body> 
+  <h1 id="title">Welcome to My Website!</h1> 
+  <p>This is a paragraph of text.</p> 
+  <script>
+    document.getElementById("title").addEventListener("click", function() { 
+      this.style.color = "red"; 
+    }); 
+  </script> 
+</body> 
+</html>
